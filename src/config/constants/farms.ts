@@ -4,12 +4,12 @@ import { FarmConfig, QuoteToken } from './types'
 const farms: FarmConfig[] = [
   {
     pid: 0,
-    lpSymbol: 'BEAN',
+    lpSymbol: 'GME',
     lpAddresses: {
       97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
       56: '0xA0CcF44bA5d67E0095247F78C697Ad7cBD6E63e9',
     },
-    tokenSymbol: 'ROAST',
+    tokenSymbol: 'KEY',
     tokenAddresses: {
       97: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
       56: '0x09953d5402840b2fB8e8eFd5Ad014658312d4AD7',
@@ -19,12 +19,12 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 1,
-    lpSymbol: 'BEAN-BNB LP',
+    lpSymbol: 'GME-BNB LP',
     lpAddresses: {
       97: '',
       56: '0x076165c18392ee421139fa17b381f4ab239Ce47E',
     },
-    tokenSymbol: 'BEAN',
+    tokenSymbol: 'GME',
     tokenAddresses: {
       97: '',
       56: '0xA0CcF44bA5d67E0095247F78C697Ad7cBD6E63e9',
@@ -32,7 +32,6 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
- 
 
   {
     pid: 2,
@@ -49,7 +48,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
- 
+
   {
     pid: 3,
     lpSymbol: 'ETH-BNB LP',
@@ -65,7 +64,6 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
-  
 ]
 
 export default farms

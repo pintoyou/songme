@@ -32,6 +32,7 @@ export enum QuoteToken {
   'ETH' = 'ETH',
   'COMP' = 'COMP',
   'SUSHI' = 'SUSHI',
+  'GME' = 'GME',
 }
 
 export enum PoolCategory {

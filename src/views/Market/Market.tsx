@@ -1,7 +1,7 @@
-import { Heading } from '@gametoken/uikit';
-import Container from 'components/layout/Container';
+import { Heading } from '@gametoken/uikit'
+import Container from 'components/layout/Container'
 import React from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Page = styled(Container)`
   min-height: calc(100vh - 64px);
@@ -23,28 +23,27 @@ const Page = styled(Container)`
 `
 
 const Center = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `
 
 const Img = styled.img`
-    height: 300px;
+  height: 300px;
 `
 
 const Home: React.FC = () => {
-
   return (
     <Page>
-        <Center>
-            <Img src="/images/soon.svg" alt="Coming soon"/>
-            <Heading as="h1" size="xl" mt="24px" color="secondary">
-                Coming Soon!
-            </Heading>
-        </Center>
+      <Center>
+        <Img src="/images/soon.svg" alt="Coming soon" />
+        <Heading as="h1" size="xl" mt="24px" color="secondary">
+          Coming Soon!
+        </Heading>
+      </Center>
     </Page>
   )
 }
