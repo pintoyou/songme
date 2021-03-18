@@ -33,29 +33,17 @@ const config: MenuEntry[] = [
   {
     label: 'Market',
     icon: 'IfoIcon',
-    items: [{ label: 'Purchase Key', href: '/purchase' }],
+    href: 'https://market.gametoken.finance',
   },
   {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'Overview',
-        href: 'https://pancakeswap.info',
-      },
-      {
-        label: 'Tokens',
-        href: 'https://pancakeswap.info/tokens',
-      },
-      {
-        label: 'Pairs',
-        href: 'https://pancakeswap.info/pairs',
-      },
-      {
-        label: 'Accounts',
-        href: 'https://pancakeswap.info/accounts',
-      },
-    ],
+    label: 'GameVault',
+    icon: 'IfoIcon',
+    href: 'https://vault.gametoken.finance',
+  },
+  {
+    label: 'GameDollar',
+    icon: 'IfoIcon',
+    href: 'https://gamedollar.gametoken.finance',
   },
   {
     label: 'More',
