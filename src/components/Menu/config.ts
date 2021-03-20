@@ -33,17 +33,17 @@ const config: MenuEntry[] = [
   {
     label: 'GameMarket',
     icon: 'IfoIcon',
-    href: '/purchase',
+    href: 'https://market.gametoken.finance',
   },
   {
     label: 'GameDollar',
     icon: 'IfoIcon',
-    href: '/purchase',
+    href: 'https://gdollar.gametoken.financ',
   },
   {
     label: 'GameVault',
     icon: 'IfoIcon',
-    href: '/purchase',
+    href: 'https://gvault.gametoken.financ',
   },
 
   {
