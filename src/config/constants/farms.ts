@@ -7,7 +7,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'GME',
     lpAddresses: {
       97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-      56: '0xA0CcF44bA5d67E0095247F78C697Ad7cBD6E63e9',
+      56: '0xaA73f1bb9c9b00790A40837c8588A33eD514D5c4',
     },
     tokenSymbol: 'KEY',
     tokenAddresses: {
@@ -27,7 +27,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'GME',
     tokenAddresses: {
       97: '',
-      56: '0xA0CcF44bA5d67E0095247F78C697Ad7cBD6E63e9',
+      56: '0xaA73f1bb9c9b00790A40837c8588A33eD514D5c4',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
