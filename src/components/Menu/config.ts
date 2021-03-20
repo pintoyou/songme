@@ -38,12 +38,12 @@ const config: MenuEntry[] = [
   {
     label: 'GameDollar',
     icon: 'IfoIcon',
-    href: 'https://gdollar.gametoken.financ',
+    href: 'https://gdollar.gametoken.finance',
   },
   {
     label: 'GameVault',
     icon: 'IfoIcon',
-    href: 'https://gvault.gametoken.financ',
+    href: 'https://gvault.gametoken.finance',
   },
 
   {
