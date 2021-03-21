@@ -48,7 +48,7 @@ const ContributeModal: React.FC<Props> = ({ currency, contract, currencyAddress,
         </Button>
       </Flex>
       <LinkExternal
-        href="https://exchange.pancakeswap.finance/#/add/ETH/0xaA73f1bb9c9b00790A40837c8588A33eD514D5c4"
+        href="https://exchange.pancakeswap.finance/#/add/ETH/0x1a672b4b2C492538214D0F403BC6a92cAE7c04d9"
         style={{ margin: 'auto' }}
       >
         {`Get ${currency}`}

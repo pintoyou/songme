@@ -4,30 +4,32 @@ import { FarmConfig, QuoteToken } from './types'
 const farms: FarmConfig[] = [
   {
     pid: 0,
+    depositFee: 0,
     lpSymbol: 'GME',
     lpAddresses: {
       97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-      56: '0xaA73f1bb9c9b00790A40837c8588A33eD514D5c4',
+      56: '0x1a672b4b2C492538214D0F403BC6a92cAE7c04d9',
     },
     tokenSymbol: 'KEY',
     tokenAddresses: {
       97: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
-      56: '0x09953d5402840b2fB8e8eFd5Ad014658312d4AD7',
+      56: '0x478123e85D3F390a2F76B5d80Bb5b6D57b6647c0',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
   {
     pid: 1,
+    depositFee: 0,
     lpSymbol: 'GME-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x076165c18392ee421139fa17b381f4ab239Ce47E',
+      56: '0xd0EB6A148939427b12E16F5ba7f71b5159aBc0D4',
     },
     tokenSymbol: 'GME',
     tokenAddresses: {
       97: '',
-      56: '0xaA73f1bb9c9b00790A40837c8588A33eD514D5c4',
+      56: '0x1a672b4b2C492538214D0F403BC6a92cAE7c04d9',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -35,6 +37,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 2,
+    depositFee: 3,
     lpSymbol: 'BUSD-BNB LP',
     lpAddresses: {
       97: '0x2f7682b64b88149ba3250aee32db712964de5fa9',
@@ -51,6 +54,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 3,
+    depositFee: 3,
     lpSymbol: 'ETH-BNB LP',
     lpAddresses: {
       97: '0xE66790075ad839978fEBa15D4d8bB2b415556a1D',

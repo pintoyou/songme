@@ -33,7 +33,7 @@ export const useGetStats = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${baseUrl}/stat`)
+        const response = await fetch(`http://209.250.244.12:8080/api/v1/stat`)
         const responsedata: ApiStatResponse = await response.json()
 
         setData(responsedata)

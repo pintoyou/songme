@@ -1,5 +1,99 @@
 [
 	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "pid",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Deposit",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "pid",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "EmergencyWithdraw",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "pid",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Withdraw",
+		"type": "event"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -13,7 +107,7 @@
 			},
 			{
 				"internalType": "uint16",
-				"name": "_depositFeeBP",
+				"name": "_depositFee",
 				"type": "uint16"
 			},
 			{
@@ -48,57 +142,6 @@
 	{
 		"inputs": [
 			{
-				"internalType": "contract BlzdToken",
-				"name": "_blzd",
-				"type": "address"
-			},
-			{
-				"internalType": "address",
-				"name": "_devaddr",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_blzdPerBlock",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_startBlock",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "user",
-				"type": "address"
-			},
-			{
-				"indexed": true,
-				"internalType": "uint256",
-				"name": "pid",
-				"type": "uint256"
-			},
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "amount",
-				"type": "uint256"
-			}
-		],
-		"name": "Deposit",
-		"type": "event"
-	},
-	{
-		"inputs": [
-			{
 				"internalType": "address",
 				"name": "_devaddr",
 				"type": "address"
@@ -123,29 +166,30 @@
 		"type": "function"
 	},
 	{
-		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "user",
-				"type": "address"
-			},
-			{
-				"indexed": true,
 				"internalType": "uint256",
-				"name": "pid",
-				"type": "uint256"
-			},
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "amount",
+				"name": "_amount",
 				"type": "uint256"
 			}
 		],
-		"name": "EmergencyWithdraw",
-		"type": "event"
+		"name": "enterStaking",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "leaveStaking",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
 	},
 	{
 		"inputs": [],
@@ -155,23 +199,17 @@
 		"type": "function"
 	},
 	{
-		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "previousOwner",
-				"type": "address"
-			},
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "newOwner",
-				"type": "address"
+				"internalType": "uint256",
+				"name": "_pid",
+				"type": "uint256"
 			}
 		],
-		"name": "OwnershipTransferred",
-		"type": "event"
+		"name": "migrate",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
 	},
 	{
 		"inputs": [],
@@ -194,7 +232,7 @@
 			},
 			{
 				"internalType": "uint16",
-				"name": "_depositFeeBP",
+				"name": "_depositFee",
 				"type": "uint16"
 			},
 			{
@@ -209,25 +247,6 @@
 		"type": "function"
 	},
 	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "user",
-				"type": "address"
-			},
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "newAddress",
-				"type": "address"
-			}
-		],
-		"name": "SetDevAddress",
-		"type": "event"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "address",
@@ -235,61 +254,23 @@
 				"type": "address"
 			}
 		],
-		"name": "setFeeAddressBb",
+		"name": "setFeeAddress",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
-		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "user",
-				"type": "address"
-			},
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "newAddress",
+				"internalType": "contract IMigratorChef",
+				"name": "_migrator",
 				"type": "address"
 			}
 		],
-		"name": "SetFeeAddressBb",
-		"type": "event"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_feeAddress",
-				"type": "address"
-			}
-		],
-		"name": "setFeeAddressSt",
+		"name": "setMigrator",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},
-	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "user",
-				"type": "address"
-			},
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "newAddress",
-				"type": "address"
-			}
-		],
-		"name": "SetFeeAddressSt",
-		"type": "event"
 	},
 	{
 		"inputs": [
@@ -305,23 +286,17 @@
 		"type": "function"
 	},
 	{
-		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "user",
-				"type": "address"
-			},
-			{
-				"indexed": false,
 				"internalType": "uint256",
-				"name": "blzdPerBlock",
+				"name": "multiplierNumber",
 				"type": "uint256"
 			}
 		],
-		"name": "UpdateEmissionRate",
-		"type": "event"
+		"name": "updateMultiplier",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
 	},
 	{
 		"inputs": [
@@ -355,59 +330,70 @@
 		"type": "function"
 	},
 	{
-		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": true,
+				"internalType": "contract Bean",
+				"name": "_cake",
+				"type": "address"
+			},
+			{
+				"internalType": "contract Roast",
+				"name": "_syrup",
+				"type": "address"
+			},
+			{
 				"internalType": "address",
-				"name": "user",
+				"name": "_devaddr",
 				"type": "address"
 			},
 			{
-				"indexed": true,
+				"internalType": "address",
+				"name": "_feeAddress",
+				"type": "address"
+			},
+			{
 				"internalType": "uint256",
-				"name": "pid",
+				"name": "_cakePerBlock",
 				"type": "uint256"
 			},
 			{
-				"indexed": false,
 				"internalType": "uint256",
-				"name": "amount",
+				"name": "_startBlock",
 				"type": "uint256"
 			}
 		],
-		"name": "Withdraw",
-		"type": "event"
-	},
-	{
-		"inputs": [],
-		"name": "blzd",
-		"outputs": [
-			{
-				"internalType": "contract BlzdToken",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "blzdPerBlock",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
+		"stateMutability": "nonpayable",
+		"type": "constructor"
 	},
 	{
 		"inputs": [],
 		"name": "BONUS_MULTIPLIER",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "cake",
+		"outputs": [
+			{
+				"internalType": "contract Bean",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "cakePerBlock",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -433,20 +419,7 @@
 	},
 	{
 		"inputs": [],
-		"name": "feeAddBb",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "feeAddSt",
+		"name": "feeAddress",
 		"outputs": [
 			{
 				"internalType": "address",
@@ -483,6 +456,19 @@
 	},
 	{
 		"inputs": [],
+		"name": "migrator",
+		"outputs": [
+			{
+				"internalType": "contract IMigratorChef",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "owner",
 		"outputs": [
 			{
@@ -507,31 +493,12 @@
 				"type": "address"
 			}
 		],
-		"name": "pendingBlzd",
+		"name": "pendingCake",
 		"outputs": [
 			{
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "contract IBEP20",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "poolExistence",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
 			}
 		],
 		"stateMutability": "view",
@@ -564,12 +531,12 @@
 			},
 			{
 				"internalType": "uint256",
-				"name": "accBlzdPerShare",
+				"name": "accCakePerShare",
 				"type": "uint256"
 			},
 			{
 				"internalType": "uint16",
-				"name": "depositFeeBP",
+				"name": "depositFee",
 				"type": "uint16"
 			}
 		],
@@ -597,6 +564,19 @@
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "syrup",
+		"outputs": [
+			{
+				"internalType": "contract Roast",
+				"name": "",
+				"type": "address"
 			}
 		],
 		"stateMutability": "view",

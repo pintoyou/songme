@@ -5,10 +5,10 @@ const pools: PoolConfig[] = [
     sousId: 0,
     tokenName: 'GME',
     stakingTokenName: QuoteToken.GME,
-    stakingTokenAddress: '0xaA73f1bb9c9b00790A40837c8588A33eD514D5c4',
+    stakingTokenAddress: '0x1a672b4b2C492538214D0F403BC6a92cAE7c04d9',
     contractAddress: {
       97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
-      56: '0x16F27dE11b88254BE89eF34067ce07D0a8606435',
+      56: '0x484cE442c7B7F3022f2d4C43Af36977d3783F1F7',
     },
     poolCategory: PoolCategory.CORE,
     projectLink: 'http://gametoken.finance/',
