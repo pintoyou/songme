@@ -55,7 +55,7 @@ const Ifo = () => {
             <LinkExternal href="https://exchange.pancakeswap.finance/#/swap" mr="16px">
               {TranslateString(1060, 'Buy CAKE')}
             </LinkExternal>
-            <LinkExternal href="https://exchange.pancakeswap.finance/#/add/ETH/0x1a672b4b2C492538214D0F403BC6a92cAE7c04d9">
+            <LinkExternal href="https://exchange.pancakeswap.finance/#/add/ETH/0xD470c422e3AFD6C788f447CFC8dC869ccDF55B5E">
               {TranslateString(1062, 'Get LP tokens')}
             </LinkExternal>
           </Flex>

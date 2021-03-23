@@ -8,12 +8,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'GME',
     lpAddresses: {
       97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-      56: '0x1a672b4b2C492538214D0F403BC6a92cAE7c04d9',
+      56: '0xD470c422e3AFD6C788f447CFC8dC869ccDF55B5E',
     },
     tokenSymbol: 'KEY',
     tokenAddresses: {
       97: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
-      56: '0x478123e85D3F390a2F76B5d80Bb5b6D57b6647c0',
+      56: '0x762C2CDC25acf4B1F3FD0114965163C8Dfee579B',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -24,12 +24,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'GME-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0xd0EB6A148939427b12E16F5ba7f71b5159aBc0D4',
+      56: '0x87066260c5cFd4202A48F28C19A000e0D30963eb',
     },
     tokenSymbol: 'GME',
     tokenAddresses: {
       97: '',
-      56: '0x1a672b4b2C492538214D0F403BC6a92cAE7c04d9',
+      56: '0xD470c422e3AFD6C788f447CFC8dC869ccDF55B5E',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
