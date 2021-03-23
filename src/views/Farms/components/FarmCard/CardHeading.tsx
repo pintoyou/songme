@@ -9,7 +9,6 @@ export interface ExpandableSectionProps {
   isCommunityFarm?: boolean
   farmImage?: string
   tokenSymbol?: string
-  
 }
 
 const Wrapper = styled(Flex)`
