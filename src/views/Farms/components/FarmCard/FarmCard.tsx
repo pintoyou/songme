@@ -17,7 +17,7 @@ import ApyButton from './ApyButton'
 
 export interface FarmWithStakedValue extends Farm {
   apy?: BigNumber
-  depositfee?: BigNumber
+  
 }
 
 const RainbowLight = keyframes`
@@ -132,7 +132,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
   const liquidityUrlPathParts = getLiquidityUrlPathParts({ quoteTokenAdresses, quoteTokenSymbol, tokenAddresses })
   const addLiquidityUrl = `${BASE_ADD_LIQUIDITY_URL}/${liquidityUrlPathParts}`
 
-  const depositfee = farm.depositFee
+  
 
   return (
     <FCard>
@@ -163,10 +163,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <Text>{TranslateString(318, 'Earn')}:</Text>
         <Text bold>{earnLabel}</Text>
       </Flex>
-      <Flex justifyContent="space-between">
-        <Text>Deposit Fee:</Text>
-        <Text bold>%{depositfee}</Text>
-      </Flex>
+    
       <CardActionsContainer farm={farm} ethereum={ethereum} account={account} addLiquidityUrl={addLiquidityUrl} />
       <Divider />
       <ExpandableSectionButton

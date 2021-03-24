@@ -4,7 +4,7 @@ import { FarmConfig, QuoteToken } from './types'
 const farms: FarmConfig[] = [
   {
     pid: 0,
-    depositFee: 0,
+    
     lpSymbol: 'GME',
     lpAddresses: {
       97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
@@ -20,7 +20,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 1,
-    depositFee: 0,
+    
     lpSymbol: 'GME-BNB LP',
     lpAddresses: {
       97: '',
@@ -37,7 +37,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 2,
-    depositFee: 3,
+    
     lpSymbol: 'BUSD-BNB LP',
     lpAddresses: {
       97: '0x2f7682b64b88149ba3250aee32db712964de5fa9',
@@ -54,7 +54,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 3,
-    depositFee: 3,
+    
     lpSymbol: 'ETH-BNB LP',
     lpAddresses: {
       97: '0xE66790075ad839978fEBa15D4d8bB2b415556a1D',

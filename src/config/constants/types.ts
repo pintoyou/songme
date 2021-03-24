@@ -54,7 +54,7 @@ export interface FarmConfig {
   tokenAddresses: Address
   quoteTokenSymbol: QuoteToken
   quoteTokenAdresses: Address
-  depositFee: number
+  
   multiplier?: string
   isCommunity?: boolean
   dual?: {
