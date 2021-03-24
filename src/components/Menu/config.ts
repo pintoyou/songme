@@ -30,7 +30,22 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: '/pools',
   },
-  
+  {
+    label: 'GameMarket',
+    icon: 'IfoIcon',
+    href: 'https://market.gametoken.finance',
+  },
+  {
+    label: 'GameDollar',
+    icon: 'IfoIcon',
+    href: 'https://gdollar.gametoken.finance',
+  },
+  {
+    label: 'GameVault',
+    icon: 'IfoIcon',
+    href: 'https://gvault.gametoken.finance',
+  },
+
   {
     label: 'More',
     icon: 'MoreIcon',
